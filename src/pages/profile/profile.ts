@@ -4,6 +4,7 @@ import { StorageService } from '../../services/storage.service';
 import { ClienteDTO } from '../../models/cliente.dto';
 import { ClienteService } from '../../services/domain/cliente.service';
 import { API_CONFIG } from '../../config/api.config';
+import { CidadeDTO } from '../../models/cidade.dto';
 
 @IonicPage()
 @Component({
@@ -27,7 +28,7 @@ export class ProfilePage {
     if(localUser && localUser.email){
       this.clienteService.findByEmail(localUser.email)
       .subscribe(response => {
-        this.cliente = response;
+        this.cliente = response as ClienteDTO;
         this.getImageIfExists();
       }, error => {
         if(error.status == 403){
