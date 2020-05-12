@@ -5,7 +5,6 @@ import { CidadeDTO } from '../../models/cidade.dto';
 import { EstadoDTO } from '../../models/estado.dto';
 import { EstadoService } from '../../services/domain/estado.service';
 import { CidadeService } from '../../services/domain/cidade.service';
-import { updateDate } from 'ionic-angular/umd/util/datetime-util';
 import { ClienteService } from '../../services/domain/cliente.service';
 
 @IonicPage()

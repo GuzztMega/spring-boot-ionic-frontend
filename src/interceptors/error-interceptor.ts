@@ -4,7 +4,6 @@ import { Injectable } from "@angular/core";
 import { StorageService } from "../services/storage.service";
 import { AlertController } from "ionic-angular";
 import { FieldMessage } from "../models/fieldmessage";
-import { s } from "@angular/core/src/render3";
 
 @Injectable()
 export class ErrorInterceptor implements HttpInterceptor{
