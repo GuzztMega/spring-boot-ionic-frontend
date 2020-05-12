@@ -1,4 +1,4 @@
 export const API_CONFIG = {
-    baseUrl: "http://localhost:8080",
+    baseUrl: "https://udemyspring.herokuapp.com",
     bucketBaseUrl: "https://udemy-springionic.s3-sa-east-1.amazonaws.com/"
 }
