@@ -32,7 +32,7 @@ export class ProdutosPage {
       .subscribe( response => {
         let start = this.items.length;
         this.items = this.items.concat(response["content"]);
-        let end = this.items.length-1;
+        let end = this.items.length;
         loader.dismiss();
         console.log(this.page);
         console.log(this.items);
